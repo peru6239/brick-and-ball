@@ -43,7 +43,7 @@ while run:
         player_x+=vel
     pygame.draw.rect(window,'red',(player_x,player_y,100,30))
     collision()
-    # if ball_y==height:
-    #     pygame.display.quit()
+    if ball_y==height:
+        pygame.display.quit()
     # print(ball_x,ball_y)
     pygame.display.update()
